@@ -19,6 +19,14 @@ angular
         { name: "MERN" }
       ];
 
+      $scope.addToDo = function() {
+        var newToDo = {};
+        newToDo.time = Date.now;
+        newToDo.name = $scope.toDoName;
+
+        $scope.toDoItems.push(newToDo);
+      };
+
       $http
         .get("/ex")
         .success(function(data) {

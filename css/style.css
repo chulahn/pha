@@ -5,6 +5,9 @@ header {
 #toDoContainer {
   background: deepskyblue;
 }
+#toDoContainer h2 {
+  display: inline-block;
+}
 
 #monthGoalsContainer {
   background: aqua;

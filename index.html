@@ -21,11 +21,32 @@
   <section>
     <div id="toDoContainer" class="col-md-2">
       <h2>ToDo</h2>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#addToDoModal">Add To Do</button>
       <ul>
         <li ng-repeat="todo in toDoItems">
           {{ todo.name }}
         </li>
       </ul>
+
+      <div id="addToDoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Add ToDo</h4>
+            </div>
+            <div class="modal-body">
+              <p>Add To Do name.</p>
+              <input ng-model="toDoName">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" ng-click="addToDo()" data-dismiss="modal">Add</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <div id="monthGoalsContainer" class="col-md-2">
@@ -39,8 +60,6 @@
     <div id="pomodoroContainer" class="col-md-2">
       <h2>Pomodoros</h2>
     </div>
-
-
   </section>
 </body>
 
