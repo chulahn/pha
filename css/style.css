@@ -1,0 +1,19 @@
+header {
+  text-align: center;
+}
+
+#toDoContainer {
+  background: deepskyblue;
+}
+
+#monthGoalsContainer {
+  background: aqua;
+}
+
+#recentSpendingContainer {
+  background: forestgreen;
+}
+
+#pomodoroContainer {
+  background: red;
+}
